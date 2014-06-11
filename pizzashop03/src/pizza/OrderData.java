@@ -21,6 +21,9 @@ public class OrderData {
     private int number;
     
     @Persistent
+    private int price;
+    
+    @Persistent
     private String name;
     
     @Persistent
@@ -29,11 +32,12 @@ public class OrderData {
     @Persistent
     private Date datetime;
  
-    public OrderData(String kind, String size, int number, String name, String address, Date datetime) {
+    public OrderData(String kind, String size, int number, int price, String name, String address, Date datetime) {
         super();
         this.kind = kind;
         this.size = size;
         this.number = number;
+        this.price = price;
         this.name = name;
         this.address = address;
         this.datetime = datetime;
@@ -69,6 +73,14 @@ public class OrderData {
  
     public void setNumber(int number) {
         this.number = number;
+    }
+    
+    public int getPrice() {
+    	return price;
+    }
+    
+    public void setPrice(int price) {
+    	this.price = price;
     }
  
     public String getName() {

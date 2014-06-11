@@ -38,6 +38,7 @@ public class PizzaShop2Servlet extends HttpServlet {
                 		",kind:'" + data.getKind() +
                 		"',size:'" + data.getSize() +
                 		"',number:'" + data.getNumber() +
+                		"',price:'" + data.getPrice() +
                 		"',name:'" + data.getName() +
                 		"',address:'" + data.getAddress() +
                 		"'},";

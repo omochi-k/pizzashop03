@@ -14,6 +14,7 @@
                 res += '<tr><td>' + json[0].kind +'</td></tr>';
                 res += '<tr><td>' + json[0].size +'</td></tr>';
                 res += '<tr><td>' + json[0].number +'</td></tr>';
+                res += '<tr><td>' + json[0].price +'</td></tr>';
                 res += '<tr><td>' + json[0].name +'</td></tr>';
                 res += '<tr><td>' + json[0].address +'</td></tr>';
             } else {
@@ -22,6 +23,7 @@
                     res += '<td>' + json[i].kind + '</td>' +
                     	'<td>' + json[i].size + '</td>' +
                     	'<td>' + json[i].number + '</td>' +
+                    	'<td>' + json[i].price + '</td>' +
                     	'<td>' + json[i].name + '</td>' +
                     	'<td>' + json[i].address +'</td>' +
                     	'<td><a href="del.html?id=' + json[i].id + '">削除</td></tr>';
